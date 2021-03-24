@@ -1,10 +1,24 @@
+import questions.array.EquilibriumIndexOfAnArray;
+import questions.array.FindSubArrayWithGivenSum;
 import questions.array.KConcatenation;
+import questions.array.LongestIncreasingSubsequenceLength;
 
 public class Main {
     public static void main(String[] args) throws Exception {
-        int max = new KConcatenation().solve(new int[]{
-                10000,10000,10000,10000,10000,10000,10000,10000,10000,10000
-        }, 100000);
-        System.out.println(max);
+       int res = new LongestIncreasingSubsequenceLength().solve(
+               new int[]{
+                       10,
+                       22,
+                       9,
+                       33,
+                       21,
+                       50,
+                       41,
+                       60,
+                       80,
+                       1
+               }
+       );
+        System.out.println(res);
     }
 }
