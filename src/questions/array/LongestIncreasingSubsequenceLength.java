@@ -3,9 +3,9 @@ package questions.array;
 public class LongestIncreasingSubsequenceLength {
     public int solve(int[] arr) {
         int[] dp = new int[arr.length];
-        dp[0] = 1;
+//        dp[0] = 1; // commented because won't be able to handle len == 1
 
-        for (int i = 1; i < dp.length; i++) {
+        for (int i = 0; i < dp.length; i++) {
             int currentMaxLen = 0;
             for (int j = 0; j < i; j++) {
                 if (arr[j] <= arr[i])
