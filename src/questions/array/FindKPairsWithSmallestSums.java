@@ -14,13 +14,7 @@ public class FindKPairsWithSmallestSums {
         }
         @Override
         public int compareTo(Pair obj) {
-            if (this.first + this.second > obj.first + obj.second) {
-                return 1;
-            } else if (this.first + this.second < obj.first + obj.second) {
-                return -1;
-            } else {
-                return 0;
-            }
+            return (this.first + this.second) - (obj.first + obj.second);
         }
     }
     public List<List<Integer>> solve(int[] nums1, int[] nums2, int k) {

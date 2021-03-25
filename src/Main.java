@@ -1,8 +1,12 @@
 import questions.array.*;
 
+import java.util.Arrays;
+
 public class Main {
     public static void main(String[] args) throws Exception {
-       int res = new TrappingRainWatter().solve2(new int[]{0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1});
-        System.out.println(res);
+        int[] res = new ThreeWayPartitioning().solve(
+          new int[]{1, 14, 5, 20, 4, 2, 54, 20, 87, 98, 3, 1, 32}, 20, 35
+        );
+        System.out.println(Arrays.toString(res));
     }
 }
