@@ -1,6 +1,7 @@
 package questions.array;
 
 public class ThreeWayPartitioning {
+//    Q - https://www.geeksforgeeks.org/three-way-partitioning-of-an-array-around-a-given-range/
     public int[] solve(int[] arr, int a, int b) {
         int i = 0, j = 0, k = arr.length - 1;
 

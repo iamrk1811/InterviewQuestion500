@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.PriorityQueue;
 
+// Q - https://www.geeksforgeeks.org/find-k-pairs-smallest-sums-two-arrays/
+
 public class FindKPairsWithSmallestSums {
     static class Pair implements Comparable<Pair> {
         int first;

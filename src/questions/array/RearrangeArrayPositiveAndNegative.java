@@ -3,6 +3,7 @@ package questions.array;
 import java.util.Arrays;
 
 public class RearrangeArrayPositiveAndNegative {
+//    Q - https://www.geeksforgeeks.org/rearrange-positive-and-negative-numbers-publish/
     public int[] solve(int[] arr) {
         int n = arr.length;
 

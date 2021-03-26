@@ -4,8 +4,9 @@ import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) throws Exception {
-        int[] res = new ThreeWayPartitioning().solve(
-          new int[]{1, 14, 5, 20, 4, 2, 54, 20, 87, 98, 3, 1, 32}, 20, 35
+
+        int[] res = new SortArrayOf0s1sAnd2s().solve(
+          new int[]{0, 1, 2, 0, 1, 2}
         );
         System.out.println(Arrays.toString(res));
     }
