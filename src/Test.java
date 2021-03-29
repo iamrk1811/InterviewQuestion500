@@ -1,27 +1,17 @@
 public class Test {
-    public static int solve(int[] price) {
-        int profit = 0;
-        // Initializing variable
-        // valley-peak approach
-        /*
-                           80
-                           /
-            30            /
-           /  \          25
-          /    15       /
-         /      \      /
-        2        10   /
-                   \ /
-                    8
-         */
-        for (int i = 1; i < price.length; i++) {
-            // traversing through array from (i+1)th
-            // position
+    public static void giveMeString(String str) {
+        String[] strArray = str.split(" ");
+        StringBuilder res = new StringBuilder();
 
-            int sub = price[i] - price[i - 1];
-            if (sub > 0)
-                profit += sub;
+        for (String temp : strArray) {
+            char firstChar = temp.charAt(0);
+            if (firstChar >= 97)
+                firstChar -= 32;
+            String newString = firstChar + temp.substring(1);
+
+            res.append(newString);
         }
-        return profit;
+
+        System.out.println(res);
     }
 }
