@@ -6,10 +6,8 @@ import java.util.Arrays;
 public class Main {
     public static void main(String[] args) throws Exception {
 
-        int res = new LargestSumSubArrayWithAtLeastKNumbers().solve(new int[]{
-                -4, -2, 1, -3
-        }, 2);
-        System.out.println(res);
-//        Test.giveMeString("Largest sum sub array with at least k numbers");
+//        String res = new FormMinimumNumberFromGivenSequence().solve("D");
+//        System.out.println(res);
+        Test.giveMeString("Number of sub arrays with maximum values in given range");
     }
 }
