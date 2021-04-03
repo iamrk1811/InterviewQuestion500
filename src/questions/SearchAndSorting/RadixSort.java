@@ -15,7 +15,7 @@ public class RadixSort {
             countSort(arr, exp);
             exp *= 10;
         }
-        System.out.println(Arrays.toString(arr));
+
         return arr;
     }
     private void countSort(int[] arr, int exp) {
