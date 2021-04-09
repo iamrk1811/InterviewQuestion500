@@ -6,7 +6,12 @@ import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) throws Exception {
-        new RadixSort().solve(new int[]{170, 45, 75, 90, 802, 24, 2, 66});
-        Test.giveMeString("Merge two sorted arrays with");
+        String res = new FindTheLargestMultipleOfThree().solve(
+                new int[]{
+                        5, 8
+                }
+        );
+        System.out.println(res);
+        Test.giveMeString("Permute two arrays such that sum of every pair is greater or equal to K");
     }
 }
