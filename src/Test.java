@@ -1,3 +1,8 @@
+import java.util.Collection;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.PriorityQueue;
+
 public class Test {
     public static void giveMeString(String str) {
         String[] strArray = str.split(" ");
