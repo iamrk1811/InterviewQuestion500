@@ -6,6 +6,7 @@ import java.util.List;
 import java.util.Queue;
 
 public class GenerateAllBinaryStringsFromGivenPattern {
+//    Q - https://www.geeksforgeeks.org/generate-all-binary-strings-from-given-pattern/
     public List<String> solve2(String str) {
         Queue<String> queue = new ArrayDeque<>();
         List<String> res = new ArrayList<>();

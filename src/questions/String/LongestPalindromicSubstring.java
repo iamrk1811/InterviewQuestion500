@@ -1,6 +1,7 @@
 package questions.String;
 
 public class LongestPalindromicSubstring {
+//    Q - https://www.geeksforgeeks.org/longest-palindromic-substring-set-2/
     public String solve(String s) {
         int n = s.length();
         boolean[][] dp = new boolean[n][n];

@@ -3,6 +3,7 @@ package questions.String;
 import java.util.Arrays;
 
 public class CheckIfBinaryRepresentationsOfTwoNumbersAreAnagram {
+//    Q - https://www.geeksforgeeks.org/check-binary-representations-two-numbers-anagram/
     public boolean solve2(int a, int b) {
         if (Integer.bitCount(a) != Integer.bitCount(b)) return false;
         return true;

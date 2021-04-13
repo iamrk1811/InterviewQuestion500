@@ -10,9 +10,8 @@ import java.util.List;
 public class Main {
     public static void main(String[] args) throws Exception {
 
-        int res = new LongestNonPalindromicSubstring().solve("malayalam");
+        int res = new CountBinaryStringsWithKTimesAppearingAdjacentTwoSetBits().solve(5, 2);
         System.out.println(res);
-
-        Test.giveMeString("Longest Non palindromic substring");
+        Test.giveMeString("Count binary strings with k times appearing adjacent two set bits");
     }
 }

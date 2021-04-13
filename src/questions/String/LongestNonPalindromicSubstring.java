@@ -1,6 +1,7 @@
 package questions.String;
 
 public class LongestNonPalindromicSubstring {
+//    Q - https://www.geeksforgeeks.org/longest-non-palindromic-substring/
     public int solve(String str) {
         int n = str.length();
         boolean isSame = false;

@@ -3,6 +3,7 @@ package questions.String;
 import java.util.Arrays;
 
 public class MakeLargestPalindromeByChangingAtMostKDigits {
+//    Q - https://www.geeksforgeeks.org/make-largest-palindrome-changing-k-digits/
     public int[] solve(int[] arr, int k) {
         boolean[] visited = new boolean[arr.length];
         Arrays.fill(visited, false);
