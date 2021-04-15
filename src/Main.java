@@ -10,14 +10,8 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) throws Exception {
-
-        List<String> list = new ArrayList<>();
-        list.add("ale");
-        list.add("apple");
-        list.add("monkey");
-        list.add("plea");
-        String res = new FindLargestWordInDictionaryByDeletingSomeCharactersOfGivenString().solve("abpcplea", list);
+        int res = new CountDistinctSubsequences().solve("gfg");
         System.out.println(res);
-        Test.giveMeString("Find largest word in dictionary by deleting some characters of given string");
+        Test.giveMeString("Given a string find its first non repeating character");
     }
 }
