@@ -1,7 +1,4 @@
-import java.util.Collection;
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.PriorityQueue;
+import java.util.*;
 
 public class Test {
     public static void giveMeString(String str) {
@@ -18,5 +15,25 @@ public class Test {
         }
 
         System.out.println(res);
+    }
+    public void test() {
+        Scanner scn = new Scanner(System.in);
+        int t = scn.nextInt();
+        while (t-- > 0) {
+            int n = scn.nextInt();
+
+            int mod = 2;
+            boolean isPrime = true;
+            while (mod <= n / 2) {
+                if (n % mod == 0) {
+                    System.out.println("Not prime");
+                    isPrime = false;
+                    break;
+                }
+                mod++;
+            }
+            if (isPrime)
+                System.out.println("Prime");
+        }
     }
 }

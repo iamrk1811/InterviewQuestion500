@@ -10,8 +10,10 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) throws Exception {
-        int res = new CountDistinctSubsequences().solve("gfg");
-        System.out.println(res);
-        Test.giveMeString("Given a string find its first non repeating character");
+        int res = new LexicographicRankOfAString().solve("acb");
+        System.out.println(new PrintNumberInAscendingOrderWhichContainsOneTwoAndThreeInTheirDigits().solve(new int[]{12, 232, 456, 234}));
+
+
+        Test.giveMeString("Find Excel column name from a given column number");
     }
 }
