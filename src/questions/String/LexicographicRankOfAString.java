@@ -3,6 +3,7 @@ package questions.String;
 import java.util.Arrays;
 
 public class LexicographicRankOfAString {
+//    Q - https://www.geeksforgeeks.org/lexicographic-rank-of-a-string/
     static long[] factArray = new long[26];
 
     static void fillFactArray() {

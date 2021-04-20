@@ -1,6 +1,7 @@
 package questions.String;
 
 public class FindExcelColumnNameFromAGivenColumnNumber {
+//    Q - https://www.geeksforgeeks.org/find-excel-column-name-given-number/
     public String solve(int n){
 
         String ans = "";

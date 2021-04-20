@@ -1,6 +1,7 @@
 package questions.String;
 
 public class RecursivelyRemoveDuplicate {
+//    Q - https://www.geeksforgeeks.org/recursively-remove-adjacent-duplicates-given-string/
     public String solve(String s) {
         return removeDuplicate(s, '\0');
     }

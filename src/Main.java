@@ -1,19 +1,23 @@
+import questions.Matrix.*;
 import questions.SearchAndSorting.*;
 import questions.String.*;
 import questions.array.*;
 
 import java.lang.reflect.Array;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.List;
+import java.util.*;
 
 public class Main {
     public static void main(String[] args) throws Exception {
-        int res = new LexicographicRankOfAString().solve("acb");
-        System.out.println(new PrintNumberInAscendingOrderWhichContainsOneTwoAndThreeInTheirDigits().solve(new int[]{12, 232, 456, 234}));
+        char[][] arr = {
+                {'X', 'O', 'X', 'X', 'X', 'X'},
+                {'X', 'O', 'X', 'X', 'O', 'X'},
+                {'X', 'X', 'X', 'O', 'O', 'X'},
+                {'O', 'X', 'X', 'X', 'X', 'X'},
+                {'X', 'X', 'X', 'O', 'X', 'O'},
+                {'O', 'O', 'X', 'O', 'O', 'O'},
+        };
+        new GivenAMatrixOfOAndXReplaceOWithXIfSurroundedByX().solve(arr);
 
-
-        Test.giveMeString("Find Excel column name from a given column number");
+        Test.giveMeString("Validity of a given Tic Tac Toe board configuration");
     }
 }

@@ -1,6 +1,7 @@
 package questions.String;
 
 public class StringMatchingWhereOneStringContainsWildcardCharacters {
+//    Q - https://www.geeksforgeeks.org/wildcard-character-matching/
     public boolean solve(String s, String p) {
         boolean[][] dp = new boolean[p.length() + 1][s.length() + 1];
 

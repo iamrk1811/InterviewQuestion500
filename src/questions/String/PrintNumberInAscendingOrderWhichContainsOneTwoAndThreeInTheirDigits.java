@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 
 public class PrintNumberInAscendingOrderWhichContainsOneTwoAndThreeInTheirDigits {
+//    Q - https://www.geeksforgeeks.org/print-number-ascending-order-contains-1-2-3-digits/
     public ArrayList<Integer> solve(int[] num) {
         ArrayList<Integer> list = new ArrayList<>();
 

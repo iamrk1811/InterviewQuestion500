@@ -6,7 +6,7 @@ import java.util.HashMap;
 import java.util.PriorityQueue;
 
 public class RearrangeAStringSoThatAllSameCharactersBecomeDDistanceAway {
-//    Q -
+//    Q - https://www.geeksforgeeks.org/rearrange-a-string-so-that-all-same-characters-become-at-least-d-distance-away/
     static class Pair implements Comparable<Pair> {
         char ch;
         int frequency;
