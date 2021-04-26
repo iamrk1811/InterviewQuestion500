@@ -8,16 +8,15 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) throws Exception {
-        char[][] arr = {
-                {'X', 'O', 'X', 'X', 'X', 'X'},
-                {'X', 'O', 'X', 'X', 'O', 'X'},
-                {'X', 'X', 'X', 'O', 'O', 'X'},
-                {'O', 'X', 'X', 'X', 'X', 'X'},
-                {'X', 'X', 'X', 'O', 'X', 'O'},
-                {'O', 'O', 'X', 'O', 'O', 'O'},
+        int[][] mat = {
+                { 1, 2, -1, -4, -20 },
+                { -8, -3, 4, 2, 1 },
+                { 3, 8, 6, 1, 3 },
+                { -4, -1, 1, 7, -6 },
+                { 0, -4, 10, -5, 1 }
         };
-        new GivenAMatrixOfOAndXReplaceOWithXIfSurroundedByX().solve(arr);
+        System.out.println(new FindASpecificPairInMatrix().solve(mat));
 
-        Test.giveMeString("Validity of a given Tic Tac Toe board configuration");
+        Test.giveMeString("Find a specific pair in Matrix");
     }
 }
