@@ -8,15 +8,20 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) throws Exception {
-        int[][] mat = {
-                { 1, 2, -1, -4, -20 },
-                { -8, -3, 4, 2, 1 },
-                { 3, 8, 6, 1, 3 },
-                { -4, -1, 1, 7, -6 },
-                { 0, -4, 10, -5, 1 }
-        };
-        System.out.println(new FindASpecificPairInMatrix().solve(mat));
+        char[][] mat = {
+                {'a', 'b', 'c', 'd', 'e'},
+                {'f', 'g', 'h', 'i', 'j'},
+                {'k', 'l', 'm', 'n', 'o'},
+                {'p', 'q', 'r', 's', 't'},
+                {'u', 'v', 'w', 'x', 'y'}};
+        char[] pat = {'h','m','r','w'};
+        int[][] matrix = { { 10, 20, 30, 40 },
+                { 15, 25, 35, 45 },
+                { 25, 29, 37, 48 },
+                { 32, 33, 39, 50 } };
+        int res = new KthSmallestElementInARowWiseAndColumnWiseSortedTwoDArray().solve(matrix, 7);
+        System.out.println(res);
 
-        Test.giveMeString("Find a specific pair in Matrix");
+        Test.giveMeString("A Boolean Matrix Question");
     }
 }
