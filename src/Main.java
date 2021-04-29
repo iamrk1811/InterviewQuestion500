@@ -1,3 +1,4 @@
+import questions.Backtracking.*;
 import questions.Matrix.*;
 import questions.SearchAndSorting.*;
 import questions.String.*;
@@ -14,14 +15,26 @@ public class Main {
                 {'k', 'l', 'm', 'n', 'o'},
                 {'p', 'q', 'r', 's', 't'},
                 {'u', 'v', 'w', 'x', 'y'}};
-        char[] pat = {'h','m','r','w'};
-        int[][] matrix = { { 10, 20, 30, 40 },
-                { 15, 25, 35, 45 },
-                { 25, 29, 37, 48 },
-                { 32, 33, 39, 50 } };
-        int res = new KthSmallestElementInARowWiseAndColumnWiseSortedTwoDArray().solve(matrix, 7);
+        char[] pat = {'h', 'm', 'r', 'w'};
+        int[][] matrix = {
+                { 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 },
+                { 1, 0, 1, 1, 1, 1, 1, 1, 1, 1 },
+                { 1, 1, 1, 0, 1, 1, 1, 1, 1, 1 },
+                { 1, 1, 1, 1, 0, 1, 1, 1, 1, 1 },
+                { 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 },
+                { 1, 1, 1, 1, 1, 0, 1, 1, 1, 1 },
+                { 1, 0, 1, 1, 1, 1, 1, 1, 0, 1 },
+                { 1, 1, 1, 1, 1, 1, 1, 1, 0, 0 },
+                { 1, 1, 1, 1, 1, 1, 1, 1, 1, 0 },
+                { 0, 1, 1, 1, 1, 0, 1, 1, 1, 1 },
+                { 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 },
+                { 1, 1, 1, 0, 1, 1, 1, 1, 1, 1 } };
+
+
+
+        int res = new FindShortestSafeRouteInAPathWithLandmines().solve(matrix);
         System.out.println(res);
 
-        Test.giveMeString("A Boolean Matrix Question");
+        Test.giveMeString("Find shortest safe route in a path with landmines");
     }
 }

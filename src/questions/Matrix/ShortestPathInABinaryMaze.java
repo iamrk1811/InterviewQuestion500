@@ -14,16 +14,16 @@ public class ShortestPathInABinaryMaze {
 
         matrix[0][0] = 0; // visited
 
-        int[] distRow = {-1, 0, 1, 0};
-        int[] distCol = {0, 1, 0, -1};
+        int[] dictRow = {-1, 0, 1, 0};
+        int[] dictCol = {0, 1, 0, -1};
         while (!queue.isEmpty()) {
             int[] current = queue.remove();
 
             if (current[0] == r && current[1] == c) return current[2];
 
             for (int i = 0; i < 4; i++) {
-                int row = current[0] + distRow[i];
-                int col = current[1] + distCol[i];
+                int row = current[0] + dictRow[i];
+                int col = current[1] + dictCol[i];
 
                 if (row >= 0 && col >= 0 && row < m && col < n && matrix[row][col] == 1) {
                     matrix[row][col] = 0;
