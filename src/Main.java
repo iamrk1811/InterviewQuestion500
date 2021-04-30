@@ -18,23 +18,10 @@ public class Main {
         char[] pat = {'h', 'm', 'r', 'w'};
         int[][] matrix = {
                 { 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 },
-                { 1, 0, 1, 1, 1, 1, 1, 1, 1, 1 },
-                { 1, 1, 1, 0, 1, 1, 1, 1, 1, 1 },
-                { 1, 1, 1, 1, 0, 1, 1, 1, 1, 1 },
-                { 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 },
-                { 1, 1, 1, 1, 1, 0, 1, 1, 1, 1 },
-                { 1, 0, 1, 1, 1, 1, 1, 1, 0, 1 },
-                { 1, 1, 1, 1, 1, 1, 1, 1, 0, 0 },
-                { 1, 1, 1, 1, 1, 1, 1, 1, 1, 0 },
-                { 0, 1, 1, 1, 1, 0, 1, 1, 1, 1 },
-                { 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 },
-                { 1, 1, 1, 0, 1, 1, 1, 1, 1, 1 } };
-
-
-
-        int res = new FindShortestSafeRouteInAPathWithLandmines().solve(matrix);
-        System.out.println(res);
-
-        Test.giveMeString("Find shortest safe route in a path with landmines");
+                { 1, 1, 0, 1, 1, 0, 1, 1, 0, 1 },
+                { 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 }
+        };
+        System.out.println(new MatchAPatternAndStringWithoutUsingRegularExpressions().solve("graphstreegraphs", "aba"));
+        Test.giveMeString("Match a pattern and String without using regular expressions");
     }
 }
