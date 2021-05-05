@@ -1,6 +1,6 @@
 package questions.LinkedList;
 
-public class ListNode {
+public class ListNode{
     public int data;
     public ListNode next = null;
 

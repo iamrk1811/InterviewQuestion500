@@ -1,6 +1,6 @@
 package questions.LinkedList;
 
-public class MyLinkedList {
+public class MyLinkedList{
     ListNode head = null;
     ListNode tail = null;
     public int size = 0;
@@ -64,10 +64,11 @@ public class MyLinkedList {
         return res.toString();
     }
     public static void display(ListNode node) {
+        ListNode temp = node;
         StringBuilder res = new StringBuilder();
-        while (node != null) {
-            res.append(node.data + "->");
-            node = node.next;
+        while (temp != null) {
+            res.append(temp.data + "->");
+            temp = temp.next;
         }
         res.append("NULL");
         System.out.println(res);
