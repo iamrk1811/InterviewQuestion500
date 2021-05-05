@@ -63,7 +63,7 @@ public class MyLinkedList {
         res.append("NULL");
         return res.toString();
     }
-    public void display(ListNode node) {
+    public static void display(ListNode node) {
         StringBuilder res = new StringBuilder();
         while (node != null) {
             res.append(node.data + "->");

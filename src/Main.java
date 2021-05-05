@@ -3,24 +3,19 @@ import questions.LinkedList.*;
 public class Main {
     public static void main(String[] args) throws Exception {
 //        ArrayList<EdgeUndirectedGraphWithWeight>[] graph = new CreateUndirectedGraphWithWeight().create();
+
         MyLinkedList list = new MyLinkedList();
-        ListNode node = new ListNode(50, null);
+        list.add(12);
+        list.add(15);
         list.add(10);
-        list.add(20);
-        list.add(node);
-        list.add(30);
-        list.add(40);
-        System.out.println(list);
-        System.out.println(list.size);
-
-        ListNode head = list.getHead();
-
-        ListNode newHead = new ProgramForNthNodeFromTheEndOfALinkedList().solve(head, 1);
-
-        list.display(newHead);
+        list.add(11);
 
 
+        ListNode node = list.getHead();
+//        ListNode sorted = new MergeSortForLinkedList().solve(node);
+        ListNode ok = new DeleteNodesWhichHaveAGreaterValueOnRightSide().solve(node);
+        MyLinkedList.display(ok);
 
-        Test.giveMeString("Program for nth node from the end of a Linked List");
+        Test.giveMeString("Segregate even and odd nodes in a Linked List");
     }
 }
