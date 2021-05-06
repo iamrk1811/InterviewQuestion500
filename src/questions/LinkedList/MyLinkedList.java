@@ -1,9 +1,12 @@
 package questions.LinkedList;
 
-public class MyLinkedList{
+import java.util.List;
+
+public class MyLinkedList {
     ListNode head = null;
     ListNode tail = null;
     public int size = 0;
+
     public void add(ListNode node) {
         if (this.head == null) {
             this.head = node;
@@ -17,6 +20,22 @@ public class MyLinkedList{
         temp.next = node;
         this.size++;
     }
+
+    public static ListNode createListFromArray(int[] arr) {
+        ListNode dummy = new ListNode();
+        ListNode temp = dummy;
+        for (int i = 0; i < arr.length; i++) {
+            ListNode node = new ListNode(arr[i]);
+            if (temp == null) {
+                temp = node;
+            } else {
+                temp.next = node;
+            }
+            temp = temp.next;
+        }
+        return dummy.next;
+    }
+
     public int delete() {
         if (head == null) {
             return -1;
@@ -37,6 +56,7 @@ public class MyLinkedList{
 
         return deletedData;
     }
+
     public void add(int data) {
         ListNode node = this.head;
         if (head == null) {
@@ -52,6 +72,7 @@ public class MyLinkedList{
         }
         this.size++;
     }
+
     public String toString() {
         StringBuilder res = new StringBuilder();
         ListNode temp = this.head;
@@ -63,6 +84,7 @@ public class MyLinkedList{
         res.append("NULL");
         return res.toString();
     }
+
     public static void display(ListNode node) {
         ListNode temp = node;
         StringBuilder res = new StringBuilder();
@@ -73,6 +95,18 @@ public class MyLinkedList{
         res.append("NULL");
         System.out.println(res);
     }
+
+    public static void displayBottom(ListNode node) {
+        ListNode temp = node;
+        StringBuilder res = new StringBuilder();
+        while (temp != null) {
+            res.append(temp.data + "->");
+            temp = temp.bottom;
+        }
+        res.append("NULL");
+        System.out.println(res);
+    }
+
     public ListNode getHead() {
         return this.head;
     }
