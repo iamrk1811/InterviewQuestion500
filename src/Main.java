@@ -1,24 +1,20 @@
 import questions.LinkedList.*;
 
-import java.util.Arrays;
-import java.util.List;
-import java.util.Random;
-
 public class Main {
     public static void main(String[] args) throws Exception {
 //        ArrayList<EdgeUndirectedGraphWithWeight>[] graph = new CreateUndirectedGraphWithWeight().create();
 
-        int[] arr = {1, 7, 3, 4};
 
-        ListNode node = MyLinkedList.createListFromArray(arr);
+        ListNode list1 = MyLinkedList.createDoublyListFromArray(new int[]{2, 5, 7, 12, 10, 6, 4, 1});
 
-        int res = new SelectARandomNodeFromASinglyLinkedList().getRandom(node);
+//        ListNode res = new SortLinkedListWhichIsAlreadySortedOnAbsoluteValues().solve(node);
 
-        System.out.println( res);
+//        MyLinkedList.display(res);
 
+//        MyLinkedList.display(list1);
 
-
-
-        Test.giveMeString("Select a Random Node from a Singly Linked List");
+        ListNode node = new SortTheBitonicDoublyLinkedList().solve(list1);
+        MyLinkedList.display(node);
+        Test.giveMeString("Sort the biotonic doubly linked list");
     }
 }

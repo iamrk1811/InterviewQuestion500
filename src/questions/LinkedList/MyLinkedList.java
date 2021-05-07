@@ -36,6 +36,35 @@ public class MyLinkedList {
         return dummy.next;
     }
 
+    public static ListNode createDoublyListFromArray(int[] arr) {
+        if (arr.length == 0) return new ListNode();
+
+        ListNode dummy = new ListNode();
+        ListNode temp = dummy;
+        for (int i = 0; i < arr.length; i++) {
+            ListNode node = new ListNode(arr[i]);
+            if (temp == null) {
+                temp = node;
+            } else {
+                node.prev = temp;
+            }
+            temp = node;
+        }
+
+        ListNode last = temp;
+
+        temp = temp.prev;
+
+
+        while (temp != null) {
+            temp.next = last;
+            last = temp;
+            temp = temp.prev;
+        }
+
+        return dummy.next;
+    }
+
     public int delete() {
         if (head == null) {
             return -1;
@@ -109,5 +138,24 @@ public class MyLinkedList {
 
     public ListNode getHead() {
         return this.head;
+    }
+
+    public static void testDoublyList(ListNode head) {
+        if (head == null || head.next == null) return;
+
+        ListNode temp = head;
+
+        ListNode tail = null;
+        while (temp != null) {
+            System.out.print(temp.data + "-->");
+            tail = temp;
+            temp = temp.next;
+        }
+        System.out.println();
+        while (tail != null) {
+            System.out.print(tail.data + "<--");
+            tail = tail.prev;
+        }
+        return;
     }
 }
