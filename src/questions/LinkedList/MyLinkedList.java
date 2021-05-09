@@ -21,6 +21,24 @@ public class MyLinkedList {
         this.size++;
     }
 
+    public void addFront(int data) {
+        ListNode node = new ListNode(data);
+        node.next = head;
+        head = node;
+        this.size++;
+    }
+
+    public int removeFront () {
+        if (head == null)
+            return -1;
+
+        int removedData = head.data;
+        head = head.next;
+
+        this.size--;
+        return removedData;
+    }
+
     public static ListNode createListFromArray(int[] arr) {
         ListNode dummy = new ListNode();
         ListNode temp = dummy;
