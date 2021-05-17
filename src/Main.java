@@ -1,6 +1,10 @@
 import questions.Greedy.*;
 import questions.LinkedList.*;
 import questions.Math.*;
+import questions.OrderStatisticsHeapHash.FindTheMaximumRepeatingNumber;
+import questions.OrderStatisticsHeapHash.FindTheSmallestPositiveNumberMissingFromAnUnsortedArray;
+import questions.OrderStatisticsHeapHash.LengthOfTheLargestSubArrayWithContiguousElements;
+import questions.OrderStatisticsHeapHash.SlidingWindowMaximum;
 import questions.StackAndQueue.*;
 import questions.UnionFInd.DisjointUnionSet;
 
@@ -11,22 +15,15 @@ public class Main {
 //        ArrayList<EdgeUndirectedGraphWithWeight>[] graph = new CreateUndirectedGraphWithWeight().create();
 
 
-        int stack1[] = { 3, 2, 1, 1, 1 };
-        int stack2[] = { 4, 3, 2 };
-        int stack3[] = { 1, 1, 4, 1 };
-
-        Stack<Integer> st1 = new Stack<>();
-        Stack<Integer> st2 = new Stack<>();
-        Stack<Integer> st3 = new Stack<>();
-
-        for (int val : stack1) st1.push(val);
-        for (int val : stack2) st2.push(val);
-        for (int val : stack3) st3.push(val);
+        int[] arr = {10, 12, 12, 10, 10, 11, 10};
 
 
-        long ans = new FindMaximumSumPossibleEqualSumOfThreeStacks().solve(st1, st2, st3);
-        System.out.println(ans);
 
-        Test.giveMeString("Maximize array sum after K negations");
+        int res = new LengthOfTheLargestSubArrayWithContiguousElements().solve(arr);
+        System.out.println(res);
+
+
+
+        Test.giveMeString("Length of the largest subarray with contiguous elements");
     }
 }
